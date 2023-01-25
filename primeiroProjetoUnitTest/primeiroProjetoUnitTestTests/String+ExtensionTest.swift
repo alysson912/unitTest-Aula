@@ -18,9 +18,9 @@ final class String_ExtensionTest: XCTestCase {
     }
     func testIsEmail(){
         let emailTrue = "almenezes912@gmail.com".isValid(validType: .email)
-        let emailFalse = "almenezesmail.com".isValid(validType: .email)
+        let emailFalse = "almenezailcom".isValid(validType: .email)
         XCTAssertTrue(emailTrue)
-        XCTAssertTrue(emailFalse)
+        XCTAssertFalse(emailFalse)
     }
     
     func testIsPassword(){
